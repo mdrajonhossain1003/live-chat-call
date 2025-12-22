@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Live Chat & Video Call</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Live Chat + Video Call</h2>
+
+<input id="username" placeholder="Your name"><br><br>
+
+<div class="videos">
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+</div>
+
+<button onclick="startCall()">Start Video Call</button>
+
+<hr>
+
+<input id="message" placeholder="Type message">
+<button onclick="sendMessage()">Send</button>
+
+<div id="chat"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
